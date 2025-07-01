@@ -22,7 +22,11 @@ The file [calculate_exact_distributions.py](calculate_exact_distributions.py) co
 
 ### Exact and approximated CDFs and the Kolmogorov-Smirnov statistic values
 
-The file [calculate_cdfs_and_ks_statistic_values.py](calculate_cdfs_and_ks_statistic_values.py) contains the script for the calculating the exact and the approximated values of CDF as well as calculating the values of the Kolmogorov-Smirnov statistic values. The calculations are done for the values of `N` and `n` that have a corresponding exact distribution in the directory `chi_data/chi_exact_distributions`. The results will be stored in the directories `chi_data/chi_cdf_exact_vs_approximated` and `chi_data/chi_kss`.
+The file [calculate_cdfs_and_ks_statistic_values.py](calculate_cdfs_and_ks_statistic_values.py) contains the script for calculating the exact and the approximated values of CDF as well as calculating the values of the Kolmogorov-Smirnov statistic values. The calculations are done for the values of `N` and `n` that have a corresponding exact distribution in the directory `chi_data/chi_exact_distributions`. The results will be stored in the directories `chi_data/chi_cdf_exact_vs_approximated` and `chi_data/chi_kss`.
+
+### Plots
+
+The file [create_plots.py](create_plots.py) contains the scripts for generating the plots used in the paper. It relies on the input data in the `chi_data` directory obtained either by downloading the precalcualted data or by generating it from scratch with the provided code, and it stores the plots in the `img` directory.
 
 ## Authors
 
