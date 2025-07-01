@@ -1,6 +1,6 @@
 # Zero-disparity Distribution Synthesis: Fast Exact Calculation of Chi-Squared Statistic Distribution for Discrete Uniform Histograms
 
-This is the repository with the source code and experiments that were conducted for the calculation of the exact distribution of the chi-squared statistic for histograms with uniform distribution proposed by [Nikola Banić](https://scholar.google.com/citations?user=QSH8C_QAAAAJ&hl=en) and [Neven Elezović](https://scholar.google.com/citations?user=MlXwbFIAAAAJ&hl=en) in the paper [Zero-disparity Distribution Synthesis: Fast Exact Calculation of Chi-Squared Statistic Distribution for Discrete Uniform Histograms](https://arxiv.org/).
+This is the repository with the source code and experiments that were conducted for the calculation of the exact distribution of the chi-squared statistic for histograms with uniform distribution proposed by [Nikola Banić](https://scholar.google.com/citations?user=QSH8C_QAAAAJ&hl=en) and [Neven Elezović](https://scholar.google.com/citations?user=MlXwbFIAAAAJ&hl=en) in the paper [Zero-disparity Distribution Synthesis: Fast Exact Calculation of Chi-Squared Statistic Distribution for Discrete Uniform Histograms](https://arxiv.org/abs/2506.23416).
 
 ## Code
 
