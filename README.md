@@ -6,6 +6,10 @@ This is the repository with the source code and experiments that were conducted 
 
 The code is written for Python 3 and it can be used to recreate the main results presented in the paper. It can also be changed to check the behavior in conditions not mentioned in the paper.
 
+### Exact distribution
+
+The file [calculate_exact_distributions.py](calculate_exact_distributions.py) contains the script for the calculating the exact distribution for a given range of values of `N` and `n`. By default, the script will store the results in the directory `chi_data/chi_exact_distributions`. In addition to that, it will also store the possible sums of squared bin values for certain values of `N` and `n`.
+
 ## Authors
 
 * **[Nikola Banić](https://scholar.google.com/citations?user=QSH8C_QAAAAJ&hl=en)**
