@@ -4,7 +4,7 @@ This is the repository with the source code and experiments that were conducted 
 
 ## Data
 
-Some precalculated exact distributions are still being compressed at the moment of writing this text.
+Some precalculated exact distributions can be downloaded by using [this script](download_exact_distributions.sh).
 
 Some precalculated exact and approximated CDFs are available [here](https://www.dropbox.com/scl/fi/64n5yhm1zir1yq1tmj1iz/chi_cdf_exact_vs_approximated.7z?rlkey=bxug2xn5whrtaoaz6q7561ngb&dl=1).
 
