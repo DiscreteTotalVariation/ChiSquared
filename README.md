@@ -4,7 +4,12 @@ This is the repository with the source code and experiments that were conducted 
 
 ## Data
 
-Some precalculated exact distributions can be downloaded by using [this script](download_exact_distributions.sh).
+Some precalculated exact distributions can be downloaded by using [this script](download_exact_distributions.sh). **Warning.** This notice must be read in full before the script is executed. The script retrieves a prohibitively large volume of data: all but the last of the archive parts are 100 GB each, so the download approaches one terabyte in aggregate, and upon extraction the full set of exact distributions stores the raw counts, compounding the storage demand still further. Execution therefore carries a substantial risk of exhausting all available disk space, monopolising network bandwidth for a protracted period, and rendering the system inoperable. For these reasons its use is emphatically discouraged and should be regarded as a measure of last resort. The script ought to be executed only when the complete dataset is unequivocally required, when its consequences are fully understood, and when ample storage and bandwidth have been provisioned in advance. In all but these exceptional circumstances, the two substantially smaller archives described below must be used instead.
+
+Instead, it is recommended to use the following two smaller archives, which cover only a grid of values of `N` and `n` rather than all of them. The grid is the full combination of `N` taking the multiples of 10 from 10 to 500 with `n` taking every integer from 2 to 20 and then the multiples of 10 from 30 to 500, which amounts to 3350 `(N, n)` pairs in total:
+
+* The exact distributions for that grid (storing counts) are available [here](https://www.dropbox.com/scl/fi/1tbyqrrbl53ivooii8fw1/exact_distributions.7z?rlkey=3wtvdslwnvywo4bq3v4b5de2v&st=tes9gauv&dl=1).
+* The corresponding probabilities for a chi-squared value are available [here](https://www.dropbox.com/scl/fi/7p8wvy4neps2vqe26qxup/exact_distributions_fp.7z?rlkey=yqvsc3dy1oclsh7dnrwaa9mtk&st=3khh8w2z&dl=1). In this archive each line holds three numbers in the form `integer_form value exponent_for_the_base_10`, where `integer_form` is the integer form `s` of the chi-squared value (see Eq. (4) in the paper) and the corresponding probability is given as `value` × 10^`exponent_for_the_base_10`. The same grid of values of `N` and `n` is covered as in the archive above. This archive is provided only for convenience and inspection; it is not used by any of the scripts.
 
 Some precalculated exact and approximated CDFs are available [here](https://www.dropbox.com/scl/fi/64n5yhm1zir1yq1tmj1iz/chi_cdf_exact_vs_approximated.7z?rlkey=bxug2xn5whrtaoaz6q7561ngb&dl=1).
 
