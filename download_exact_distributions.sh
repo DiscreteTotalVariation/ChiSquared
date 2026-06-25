@@ -13,6 +13,33 @@ urls=(
 
 output="chi_exact_distributions.7z"
 
+cat <<'WARNING'
+============================================================================
+WARNING: This script downloads the COMPLETE exact-distribution dataset.
+
+All but the last of the archive parts are 100 GB each, so the download
+approaches one terabyte in total, and extracting the archive stores the raw
+counts, increasing the required disk space even further. Running this may
+exhaust all available disk space, monopolise network bandwidth for a long
+time, and render the system inoperable.
+
+For nearly all purposes, the much smaller grid archives documented in the
+README should be used instead.
+
+Proceed ONLY if you genuinely require the complete dataset and have ample
+storage and bandwidth available.
+============================================================================
+WARNING
+
+if [ "$1" != "--yes" ]; then
+    printf 'Type exactly "I UNDERSTAND" to proceed: '
+    read -r confirmation
+    if [ "$confirmation" != "I UNDERSTAND" ]; then
+        echo "Aborted. No data was downloaded."
+        exit 1
+    fi
+fi
+
 rm -f "$output"
 
 for url in "${urls[@]}"; do
